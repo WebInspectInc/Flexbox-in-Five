@@ -43,11 +43,54 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Flexbox in Five</h1>
-				</section>
+					<section>
+						<h1>Flexbox</h1>
+					</section>
 
-				<section>
-					<h1>Something else on a slide</h1>
+					<section>
+						<h1>Layout minus the hacks</h1>
+					</section>
+
+					<section data-background="#235D23">
+						<h2>In the past, we’ve relied on <br>tables and floats for layouts</h2>
+						<h3 class="fragment">...but no longer</h3>
+					</section>
+
+					<section data-background="img/jumping.gif">
+						<h3>Before we jump in...</h3>
+					</section>
+
+					<section data-background="img/me.png" class="dark">
+						<h1 class="fragment">All the social things</h1>
+						<p class="fragment">(add social things animation thingey here)</p>
+					</section>
+
+					<section>
+						<h2>The web was not made for grids</h2>
+						<p>It was made for text, and text alone.</p>
+						<p class="fragment">Which is why layout on the web is pretty half-baked</p>
+					</section>
+
+					<section data-background="img/halfcar.gif"></section>
+
+					<section data-state="light">
+						<h2>Web standards to the rescue!</h2>
+						<h3 class="fragment">The W3C came out with two new layout modules</h3>
+						<h4 class="fragment">And yup, Flexbox was one of them</h4>
+					</section>
+
+					<section>
+						<h2>Flexbox allows a parent to alter its items’ width/height to best fill the available space</h2>
+					</section>
+
+					<section>
+						<h2>Basically this:</h2>
+						<div class="flex--one">
+							<span class="flex--one__child"></span>
+							<span class="flex--one__child"></span>
+							<span class="flex--one__child"></span>
+						</div>
+					</section>
 				</section>
 			</div>
 
@@ -76,8 +119,6 @@
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }

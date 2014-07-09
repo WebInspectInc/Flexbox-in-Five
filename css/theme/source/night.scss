@@ -17,7 +17,12 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #111;
+$backgroundColor: #2C1E1E;
+
+$green: #235D23;
+$light-green: #C6D5B0;
+$yellow: #DFFF6D;
+$maroon: #32382C;
 
 $mainFont: 'Open Sans', sans-serif;
 $linkColor: #e7ad52;
@@ -33,3 +38,40 @@ $mainFontSize: 30px;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.light {
+	background: $yellow;
+	body {
+		background: none;
+	}
+	h1, h2, h3, h4, p {
+		color: $maroon;
+	}
+}
+
+.reveal {
+
+	.dark {
+		h1, h2, h3, p {
+			color: $backgroundColor;
+		}
+	}
+
+	.flex--one {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		background: $green;
+		padding: 8px;
+		resize: horizontal;
+	}
+
+	.flex--one__child {
+		display: block;
+		background: $yellow;
+		flex-grow: 1;
+		padding: 48px;
+		border: 8px solid $green;
+	}
+
+}

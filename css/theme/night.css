@@ -1,16 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 /**
  * Black theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #111111;
-  background-color: #111111; }
+  background: #2c1e1e;
+  background-color: #2c1e1e; }
 
 .reveal {
   font-family: "Open Sans", sans-serif;
@@ -134,3 +134,26 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #e7ad52; }
+
+.light {
+  background: #dfff6d; }
+  .light body {
+    background: none; }
+  .light h1, .light h2, .light h3, .light h4, .light p {
+    color: #32382c; }
+
+.reveal .dark h1, .reveal .dark h2, .reveal .dark h3, .reveal .dark p {
+  color: #2c1e1e; }
+.reveal .flex--one {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #235d23;
+  padding: 8px;
+  resize: horizontal; }
+.reveal .flex--one__child {
+  display: block;
+  background: #dfff6d;
+  flex-grow: 1;
+  padding: 48px;
+  border: 8px solid #235d23; }
