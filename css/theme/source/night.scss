@@ -58,20 +58,23 @@ $mainFontSize: 30px;
 	}
 
 	.flex--one {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
 		background: $green;
 		padding: 8px;
-		resize: horizontal;
 	}
 
 	.flex--one__child {
 		display: block;
 		background: $yellow;
-		flex-grow: 1;
 		padding: 48px;
 		border: 8px solid $green;
 	}
 
+}
+
+.editable-code {
+	display: block;
+	background: #333;
+	padding: 0 40px;
+	white-space: pre;
+	text-align: left;
 }

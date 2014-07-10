@@ -47,15 +47,6 @@
 						<h1>Flexbox</h1>
 					</section>
 
-					<section>
-						<h1>Layout minus the hacks</h1>
-					</section>
-
-					<section data-background="#235D23">
-						<h2>In the past, we’ve relied on <br>tables and floats for layouts</h2>
-						<h3 class="fragment">...but no longer</h3>
-					</section>
-
 					<section data-background="img/jumping.gif">
 						<h3>Before we jump in...</h3>
 					</section>
@@ -63,6 +54,15 @@
 					<section data-background="img/me.png" class="dark">
 						<h1 class="fragment">All the social things</h1>
 						<p class="fragment">(add social things animation thingey here)</p>
+					</section>
+
+					<section>
+						<h1>Layout minus the hacks</h1>
+					</section>
+
+					<section data-background="#235D23">
+						<h2>In the past, we’ve relied on <br>tables and floats for layouts</h2>
+						<h3 class="fragment">...but no longer</h3>
 					</section>
 
 					<section>
@@ -86,10 +86,29 @@
 					<section>
 						<h2>Basically this:</h2>
 						<div class="flex--one">
-							<span class="flex--one__child"></span>
-							<span class="flex--one__child"></span>
-							<span class="flex--one__child"></span>
+							<span class="flex--one__child child-one"></span>
+							<span class="flex--one__child child-two"></span>
+							<span class="flex--one__child child-three"></span>
 						</div>
+
+						<style>
+							.flex--one {
+								display: flex;
+								flex-direction: row;
+								align-items: flex-start;
+							}
+						</style>
+						<style class="editable-code fragment" contenteditable>
+.child-one {
+    flex-grow: 1;
+}
+.child-two {
+    flex-grow: 2;
+}
+.child-three {
+    flex-grow: 1;
+}
+						</style>
 					</section>
 				</section>
 			</div>
@@ -122,6 +141,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					//{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 

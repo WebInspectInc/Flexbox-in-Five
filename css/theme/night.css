@@ -145,15 +145,17 @@ body {
 .reveal .dark h1, .reveal .dark h2, .reveal .dark h3, .reveal .dark p {
   color: #2c1e1e; }
 .reveal .flex--one {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   background: #235d23;
-  padding: 8px;
-  resize: horizontal; }
+  padding: 8px; }
 .reveal .flex--one__child {
   display: block;
   background: #dfff6d;
-  flex-grow: 1;
   padding: 48px;
   border: 8px solid #235d23; }
+
+.editable-code {
+  display: block;
+  background: #333;
+  padding: 0 40px;
+  white-space: pre;
+  text-align: left; }
