@@ -40,10 +40,6 @@ $mainFontSize: 30px;
 // ---------------------------------------------
 
 .light {
-	background: $yellow;
-	body {
-		background: none;
-	}
 	h1, h2, h3, h4, p {
 		color: $maroon;
 	}
@@ -57,24 +53,62 @@ $mainFontSize: 30px;
 		}
 	}
 
-	.flex--one {
-		background: $green;
-		padding: 8px;
+	pre {
+		font-size: 1.5em;
+		padding: 1em;
 	}
 
-	.flex--one__child {
-		display: block;
-		background: $yellow;
-		padding: 48px;
-		border: 8px solid $green;
+	.codeflex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.fifty {
+		flex-grow: 1;
+		margin: 32px 16px;
+		&:first-of-type {
+			margin-left: 0;
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 
 }
 
-.editable-code {
+.flex {
+	background: $backgroundColor;
+	padding: 8px;
+	height: 80px;
+}
+
+[class*='flex--'] {
+	display: flex;
+}
+
+.flex span {
+	display: block;
+	background: $yellow;
+	height: 100%;
+	transition: flex-grow 100ms ease-in-out;
+	&:first-of-type {
+		background: $maroon;
+	}
+	&:nth-child(3) {
+		background: $light-green;
+	}
+}
+
+.editable-code, code > pre {
 	display: block;
 	background: #333;
 	padding: 0 40px;
 	white-space: pre;
 	text-align: left;
+	overflow: auto;
+	max-height: 500px;
+}
+
+.two.child-four {
+	background: #32382C;
 }

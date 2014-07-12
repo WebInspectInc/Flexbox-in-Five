@@ -135,27 +135,51 @@ body {
 .reveal .slide-number {
   color: #e7ad52; }
 
-.light {
-  background: #dfff6d; }
-  .light body {
-    background: none; }
-  .light h1, .light h2, .light h3, .light h4, .light p {
-    color: #32382c; }
+.light h1, .light h2, .light h3, .light h4, .light p {
+  color: #32382c; }
 
 .reveal .dark h1, .reveal .dark h2, .reveal .dark h3, .reveal .dark p {
   color: #2c1e1e; }
-.reveal .flex--one {
-  background: #235d23;
-  padding: 8px; }
-.reveal .flex--one__child {
+.reveal pre {
+  font-size: 1.5em;
+  padding: 1em; }
+.reveal .codeflex {
+  display: flex;
+  flex-direction: row; }
+.reveal .fifty {
+  flex-grow: 1;
+  margin: 32px 16px; }
+  .reveal .fifty:first-of-type {
+    margin-left: 0; }
+  .reveal .fifty:last-of-type {
+    margin-right: 0; }
+
+.flex {
+  background: #2c1e1e;
+  padding: 8px;
+  height: 80px; }
+
+[class*='flex--'] {
+  display: flex; }
+
+.flex span {
   display: block;
   background: #dfff6d;
-  padding: 48px;
-  border: 8px solid #235d23; }
+  height: 100%;
+  transition: flex-grow 100ms ease-in-out; }
+  .flex span:first-of-type {
+    background: #32382c; }
+  .flex span:nth-child(3) {
+    background: #c6d5b0; }
 
-.editable-code {
+.editable-code, code > pre {
   display: block;
   background: #333;
   padding: 0 40px;
   white-space: pre;
-  text-align: left; }
+  text-align: left;
+  overflow: auto;
+  max-height: 500px; }
+
+.two.child-four {
+  background: #32382C; }

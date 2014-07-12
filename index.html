@@ -62,54 +62,152 @@
 
 					<section data-background="#235D23">
 						<h2>In the past, we’ve relied on <br>tables and floats for layouts</h2>
-						<h3 class="fragment">...but no longer</h3>
-					</section>
-
-					<section>
-						<h2>The web was not made for grids</h2>
-						<p>It was made for text, and text alone.</p>
-						<p class="fragment">Which is why layout on the web is pretty half-baked</p>
 					</section>
 
 					<section data-background="img/halfcar.gif"></section>
-
-					<section data-state="light">
-						<h2>Web standards to the rescue!</h2>
-						<h3 class="fragment">The W3C came out with two new layout modules</h3>
-						<h4 class="fragment">And yup, Flexbox was one of them</h4>
-					</section>
 
 					<section>
 						<h2>Flexbox allows a parent to alter its items’ width/height to best fill the available space</h2>
 					</section>
 
 					<section>
-						<h2>Basically this:</h2>
-						<div class="flex--one">
-							<span class="flex--one__child child-one"></span>
-							<span class="flex--one__child child-two"></span>
-							<span class="flex--one__child child-three"></span>
+						<h1>The parent:</h1>
+						<code><pre>
+.parent {
+    display: flex;
+}</pre></code>
+					</section>
+
+					<section>
+						<h1>The child:</h1>
+						<code><pre>
+.child {
+    flex-grow: 1;
+}</pre></code>
+					</section>
+
+					<section>
+						<h2>A quick demo:</h2>
+						<div class="flex flex--one">
+							<span class="one child-one"></span>
+							<span class="one child-two"></span>
+							<span class="one child-three"></span>
+							<span class="one child-four"></span>
 						</div>
 
-						<style>
-							.flex--one {
-								display: flex;
-								flex-direction: row;
-								align-items: flex-start;
-							}
-						</style>
-						<style class="editable-code fragment" contenteditable>
-.child-one {
+						<div class="codeflex">
+<style class="editable-code fifty" contenteditable>
+.flex--one {
+    display: flex;
+}
+</style>
+<style class="editable-code fifty" contenteditable>
+.one.child-one {
     flex-grow: 1;
 }
-.child-two {
+.one.child-two {
+    flex-grow: 1;
+}
+.one.child-three {
+    flex-grow: 1;
+}
+.one.child-four {
+    flex-grow: 0;
+}
+
+</style>
+						</div>
+					</section>
+
+					<section class="light" data-background="#DFFF6D">
+						<h1>Pretty easy, eh?</h1>
+						<h2 class="fragment">How about some examples?</h2>
+					</section>
+
+					<section>
+						<h2>Flexbox grid</h2>
+						<div class="flex flex--three">
+							<span class="three child-one"></span>
+							<span class="three child-two"></span>
+						</div>
+
+						<div class="codeflex">
+<style class="editable-code fifty" contenteditable>
+.three.child-one {
+    flex-grow: 4;
+    margin-right: 16px;
+}
+.three.child-two {
+    flex-grow: 8;
+}
+
+</style>
+					</section>
+
+					<section>
+						<h2>Perfect centering</h2>
+						<div class="flex flex--three">
+							<span class="three child-one">Some text</span>
+							<span class="three child-two">Some more text</span>
+						</div>
+
+						<div class="codeflex">
+<style class="editable-code fifty" contenteditable>
+.three.child-one {
+    flex-grow: 4;
+    margin-right: 16px;
+}
+.three.child-two {
+    flex-grow: 8;
+}
+
+</style>
+						
+					</section>
+
+					<section>
+						<h2>Application</h2>
+						<div class="flex flex--two">
+							<span class="two child-one"></span>
+							<span class="two child-two"></span>
+							<span class="two child-three"></span>
+							<span class="two child-four"></span>
+						</div>
+
+						<div class="codeflex">
+<style class="editable-code fifty" contenteditable>
+.flex--two {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex--two .two {
+    height: 33%;
+}
+</style>
+<style class="editable-code fifty" contenteditable>
+.two.child-one {
+    width: 1000px;
+}
+.two.child-two {
     flex-grow: 2;
 }
-.child-three {
+.two.child-three {
     flex-grow: 1;
 }
-						</style>
+.two.child-four {
+	width: 1000px;
+}
+
+</style>
 					</section>
+
+					<section>
+						<h3>TL;DW</h3>
+						<h1>Flexbox is really, really fun.</h1>
+					</section>
+
+					
+
 				</section>
 			</div>
 
