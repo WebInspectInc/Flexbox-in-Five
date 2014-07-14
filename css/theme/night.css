@@ -154,6 +154,15 @@ body {
   .reveal .fifty:last-of-type {
     margin-right: 0; }
 
+.perfect-centering {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background: #235d23; }
+  .perfect-centering span {
+    margin: auto; }
+
 .flex {
   background: #2c1e1e;
   padding: 8px;

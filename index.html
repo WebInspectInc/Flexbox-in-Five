@@ -82,7 +82,7 @@
 						<h1>The child:</h1>
 						<code><pre>
 .child {
-    flex-grow: 1;
+    flex: 1;
 }</pre></code>
 					</section>
 
@@ -103,16 +103,16 @@
 </style>
 <style class="editable-code fifty" contenteditable>
 .one.child-one {
-    flex-grow: 1;
+    flex: 1;
 }
 .one.child-two {
-    flex-grow: 1;
+    flex: 1;
 }
 .one.child-three {
-    flex-grow: 1;
+    flex: 1;
 }
 .one.child-four {
-    flex-grow: 0;
+    flex: 0;
 }
 
 </style>
@@ -134,34 +134,23 @@
 						<div class="codeflex">
 <style class="editable-code fifty" contenteditable>
 .three.child-one {
-    flex-grow: 4;
-    margin-right: 16px;
+    flex: 4;
 }
 .three.child-two {
-    flex-grow: 8;
+    flex: 8;
 }
 
 </style>
+						</div>
 					</section>
+
+					<section data-background="img/badger.jpg" data-background-size="auto 100%"></section>
 
 					<section>
 						<h2>Perfect centering</h2>
-						<div class="flex flex--three">
-							<span class="three child-one">Some text</span>
-							<span class="three child-two">Some more text</span>
+						<div class="perfect-centering">
+							<span>Finally! Perfectly centered both ways.</span>
 						</div>
-
-						<div class="codeflex">
-<style class="editable-code fifty" contenteditable>
-.three.child-one {
-    flex-grow: 4;
-    margin-right: 16px;
-}
-.three.child-two {
-    flex-grow: 8;
-}
-
-</style>
 						
 					</section>
 
@@ -186,27 +175,35 @@
 </style>
 <style class="editable-code fifty" contenteditable>
 .two.child-one {
-    width: 1000px;
+    flex-basis: 1000px;
 }
 .two.child-two {
-    flex-grow: 2;
+    flex: 2;
 }
 .two.child-three {
-    flex-grow: 1;
+    flex: 1;
 }
 .two.child-four {
-	width: 1000px;
+	flex-basis: 1000px;
 }
 
 </style>
 					</section>
 
 					<section>
-						<h3>TL;DW</h3>
-						<h1>Flexbox is really, really fun.</h1>
+						<h3>To sum up:</h3>
+						<h1 class="fragment">Flexbox is really, really fun.</h1>
 					</section>
 
-					
+					<section class="light" data-background="#DFFF6D">
+						<h1>Not to mentions useful.</h1>
+						<h2 class="fragment">So use it, yo.</h2>
+					</section>
+
+					<section>
+						<h1>Thanks!</h1>
+						<h3>Timothy Miller</h3>
+					</section>
 
 				</section>
 			</div>

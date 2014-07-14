@@ -76,6 +76,17 @@ $mainFontSize: 30px;
 
 }
 
+.perfect-centering {
+	display: flex;
+	align-items: center;
+	height: 400px;
+	width: 100%;
+	background: $green;
+	span {
+		margin: auto;
+	}
+}
+
 .flex {
 	background: $backgroundColor;
 	padding: 8px;
